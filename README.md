@@ -20,3 +20,10 @@ cd vagrant-ruby-starter
 Next, provision the machine by running `vagrant up`. The first time you run this, it may take around 10 minutes as it will have to download the Ubuntu box and install all software.
 
 Once this is done, you can ssh into the machine with `vagrant ssh`. Confirm that Ruby and RVM are installed by running `rvm list`, which should show the latest Ruby installed.
+
+### Vagrant quick reference
+
+- `vagrant ssh` SSH into the Vagrant machine. You can run `logout` to get out of the SSH session.
+- `vagrant destroy` Remove all traces of the virtual machine. You can run `vagrant up` to recreate/provision the box.
+- `vagrant suspend` suspends the virtual machine.
+- `vagrant resume` resumes the suspended virtual machine.

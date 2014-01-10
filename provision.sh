@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get upgrade
 
 # Essential software
 apt-get -y install build-essential git-core python-software-properties

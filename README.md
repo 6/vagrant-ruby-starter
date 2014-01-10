@@ -25,5 +25,5 @@ Once this is done, you can ssh into the machine with `vagrant ssh`. Confirm that
 
 - `vagrant ssh` SSH into the Vagrant machine. You can run `logout` to get out of the SSH session.
 - `vagrant destroy` Remove all traces of the virtual machine. You can run `vagrant up` to recreate/provision the box.
-- `vagrant suspend` suspends the virtual machine.
-- `vagrant resume` resumes the suspended virtual machine.
+- `vagrant suspend` and `vagrant resume` suspends and resumes the virtual machine.
+- `vangrant halt` and `vagrant up` shuts down and boots the virtual machine.

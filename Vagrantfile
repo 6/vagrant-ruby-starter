@@ -13,4 +13,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.gui = false
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
+
+  config.vm.provision :shell, :path => "provision/essentials.sh", :args => "stable"
 end

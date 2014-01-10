@@ -1,0 +1,16 @@
+---
+- name: Update apt
+  apt: update_cache=yes
+  sudo: yes
+
+- name: Install base packages
+  apt: pkg={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - build-essential
+    - curl
+    - git-core
+    - postgresql
+    - postgresql-client
+    - libpq-dev
+    - postgresql-contrib

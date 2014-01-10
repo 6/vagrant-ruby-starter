@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  vars:
+    ruby: 2.1.0
+
+  tasks:
+    - include: tasks/apt.yml
+    - include: tasks/ruby.yml
+    - include: tasks/heroku.yml

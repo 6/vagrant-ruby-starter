@@ -1,0 +1,9 @@
+---
+- name: Install RVM
+  shell: curl -sSL https://get.rvm.io | bash -s stable
+
+- name: RVM and Ruby setup
+  shell: 'executable=/bin/bash . "/usr/local/rvm/bin/rvm" && rvm get stable && rvm install {{ ruby }} && rvm --default use {{ ruby }}'
+
+- name: Install bundler
+  shell: gem install bundler

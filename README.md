@@ -1,4 +1,4 @@
-This will install a barebones Ubuntu 12.04 machine with Ruby, RVM, and Heroku tools set up.
+This will install a barebones Ubuntu 12.04 virtual machine with Ruby, RVM, and Heroku tools set up.
 
 ### Prerequisites
 

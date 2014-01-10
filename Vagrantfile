@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
-  config.vm.provision :shell, :path => "provision/essentials.sh", :args => "stable"
+  config.vm.provision :shell, :path => "provision/essentials.sh"
   config.vm.provision :shell, :path => "provision/install_rvm.sh", :args => "stable"
   config.vm.provision :shell, :path => "provision/install_ruby.sh", :args => "2.1.0"
   config.vm.provision :shell, :path => "provision/ruby_setup.sh"

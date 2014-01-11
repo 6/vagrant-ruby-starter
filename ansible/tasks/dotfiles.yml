@@ -1,0 +1,8 @@
+---
+- name: Create .bash_profile
+  copy: dest=/home/{{ username }}/.bash_profile
+        src=files/bash_profile
+
+- name: Create .gitconfig
+  copy: dest=/home/{{ username }}/.gitconfig
+        src=files/gitconfig

@@ -4,9 +4,14 @@
 
   vars:
     ruby: 2.1.0
+    username: vagrant
 
   tasks:
+    - name: Change login shell from Dash to Bash
+      shell: chsh -s /bin/bash
+
     - include: tasks/apt.yml
     - include: tasks/ruby.yml
     - include: tasks/heroku.yml
     - include: tasks/postgresql.yml
+    - include: tasks/dotfiles.yml

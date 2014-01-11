@@ -1,0 +1,8 @@
+---
+- name: Change login shell from Dash to Bash
+  sudo: yes
+  shell: chsh -s /bin/bash
+
+- name: Change symlink /bin/sh to point to Bash
+  sudo: yes
+  shell: ln -sf bash /bin/sh

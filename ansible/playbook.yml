@@ -9,3 +9,4 @@
     - include: tasks/apt.yml
     - include: tasks/ruby.yml
     - include: tasks/heroku.yml
+    - include: tasks/postgresql.yml

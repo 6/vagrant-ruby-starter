@@ -1,4 +1,4 @@
-This will install a barebones Ubuntu 12.04 virtual machine with Ruby, RVM, and Heroku tools set up.
+This will install a barebones Ubuntu 12.04 virtual machine with Ruby, RVM, PostgreSQL and Heroku toolbelt set up.
 
 ### Prerequisites
 
@@ -20,6 +20,8 @@ cd vagrant-ruby-starter
 Next, provision the machine by running `vagrant up`. The first time you run this, it may take around 10 minutes as it will have to download the Ubuntu box and install all software.
 
 Once this is done, you can ssh into the machine with `vagrant ssh`. Confirm that Ruby and RVM are installed by running `rvm list`, which should show the latest Ruby installed.
+
+The PostgreSQL superuser has the username `postgres` with no password. You can open the `psql` command line interface with `sudo -u postgres psql`.
 
 ### Vagrant quick reference
 

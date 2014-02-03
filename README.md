@@ -17,7 +17,13 @@ git clone https://github.com/6/vagrant-ruby-starter.git
 cd vagrant-ruby-starter
 ```
 
-Next, provision the machine by running `vagrant up`. The first time you run this, it will take around 10 minutes as it will have to download the Ubuntu box and install all software.
+Next, provision the machine:
+
+```
+vagrant up
+```
+
+The first time you run this, it will take around 15 - 20 minutes as it will have to download the Ubuntu box and install all software. It's normal to see warnings during this process and for certain tasks to take a while to complete (e.g. installing Ruby).
 
 Once this is done, you can ssh into the machine and confirm that Ruby and RVM are installed by running:
 
